@@ -1,0 +1,8 @@
+Button
+TextureButton
+RichTextLabel
+MeshInstance2D
+CanvasLayer
+AnimationPlayer
+AudioStreamPlayer
+Panel

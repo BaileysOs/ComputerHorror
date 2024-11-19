@@ -1,0 +1,257 @@
+[gd_scene load_steps=9 format=3 uid="uid://cak01tw3owwcb"]
+
+[ext_resource type="AudioStream" uid="uid://busbsvtxqcuht" path="res://sounds/old-desktop-pc-booting-24280.mp3" id="1_c166p"]
+[ext_resource type="Script" path="res://scripts/AnimationPlayer.gd" id="2_vrfpe"]
+[ext_resource type="Script" path="res://Exit.gd" id="3_htfha"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yt6jm"]
+bg_color = Color(0, 0, 1, 1)
+
+[sub_resource type="Animation" id="Animation_maqhp"]
+resource_name = "EchoOsBoot"
+length = 32.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(7.4, 8.2, 8.4, 9.5, 9.7, 10.3, 10.6, 11.3, 11.5, 11.9, 12, 12.8, 12.9, 13.7, 13.9, 14.7, 14.9, 15.5, 15.7, 16.6, 16.8, 17.4, 17.5, 18.3, 18.4, 19.1, 19.3, 20.2, 20.6, 21.3, 21.6, 22, 22.2, 22.9, 23.1, 23.6, 23.8, 24.4, 24.6, 25.5, 25.7, 26.6, 26.8, 27.2, 27.4, 28.5, 28.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.045, 0.045, 0.115, 0.115, 0.16, 0.16, 0.205, 0.205, 0.23, 0.23, 0.275, 0.275, 0.322, 0.322, 0.372222, 0.372222, 0.4124, 0.4124, 0.465, 0.465, 0.50033, 0.50033, 0.545755, 0.545755, 0.591179, 0.591179, 0.655, 0.655, 0.709, 0.709, 0.739103, 0.739103, 0.784259, 0.784259, 0.818, 0.818, 0.858445, 0.858445, 0.914056, 0.914056, 0.969667, 0.969667, 1.0, 1.0, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RichTextLabel2:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(7.4, 28.6, 28.9, 29.1, 29.7, 29.9, 30.2, 30.4, 31.2, 31.5, 32, 32.4, 32.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.0, 0.127237, 0.127237, 0.330816, 0.330816, 0.458053, 0.458053, 0.737974, 0.737974, 0.967, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer:autoplay")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StartButton:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 32.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ExitButton:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 32.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_gv2ri"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RichTextLabel2:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer:autoplay")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("StartButton:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ExitButton:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ge3ce"]
+_data = {
+"EchoOsBoot": SubResource("Animation_maqhp"),
+"RESET": SubResource("Animation_gv2ri")
+}
+
+[sub_resource type="GDScript" id="GDScript_wal8i"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_yt6jm")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_c166p")
+autoplay = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "C:\\> Initializing system boot sequence...
+C:\\> Loading core modules [█████░░░░░░░░░░░░░░░░░░░░░░] 15%
+C:\\> Verifying hardware integrity...
+   - CPU: Intel Pentium 133MHz [OK]
+   - RAM: 16MB SIMM [OK]
+   - GPU: S3 Trio64+ (2MB VRAM) [OK]
+   - Storage: 1.2GB IDE HDD (Drive C:\\) [OK]
+C:\\> Establishing network connection...
+   - Ethernet: Not Detected [SKIPPED]
+   - Dial-Up Modem: Connected (28.8kbps) [OK]
+C:\\> Initializing drivers...
+   - Display Driver: S3Trio64 v2.01 [OK]
+   - Sound Card: Sound Blaster 16 [OK]
+   - Input Devices: PS/2 Keyboard and Serial Mouse [OK]
+C:\\> Loading user profile: \"Default User\" [OK]
+C:\\> Mounting drives...
+   - Drive A:\\ (Floppy Disk) [No Media]
+   - Drive D:\\ (CD-ROM) [Ready]
+C:\\> Running startup scripts...
+   - Checking EchoBoot version... [v1.3 Detected]
+   - Verifying CORE.EXE integrity... [Verified]
+   - Launching EchoOS GUI... "
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "C:\\> Starting EchoOS 1.0...
+   - Desktop Environment Loading... [Complete]
+   - EchoTaskbar Initialized [OK]
+   - Welcome Message: \"Welcome to EchoOS – Experience the Echo!\"
+
+C:\\> System ready. It is now safe to use your computer.
+
+#######                                                                      ######
+#                     ####        #            #           #####      #          #     ####
+#                   #           #    #            #        #             #   #           #  #
+#####         #                 #######        #              #  #           #    ####
+#                   #                 #            #         #             #  #           #            #
+#                   #           #   #            #         #             #  #           #            #
+#######       ####      #            #            #####     ######  ####
+
+"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ge3ce")
+}
+script = ExtResource("2_vrfpe")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = SubResource("GDScript_wal8i")
+
+[node name="StartButton" type="Button" parent="."]
+visible = false
+layout_mode = 1
+offset_left = 68.0
+offset_top = 344.0
+offset_right = 158.0
+offset_bottom = 421.0
+text = "+---------+
+|  START  |
++---------+"
+flat = true
+
+[node name="ExitButton" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 268.0
+offset_top = 345.0
+offset_right = 348.0
+offset_bottom = 422.0
+text = "+---------+
+|   EXIT  |
++---------+"
+flat = true
+script = ExtResource("3_htfha")
+
+[connection signal="pressed" from="ExitButton" to="ExitButton" method="_on_pressed"]
