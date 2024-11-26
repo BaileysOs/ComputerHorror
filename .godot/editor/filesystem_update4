@@ -1,7 +1,4 @@
 res://main.tscn
+res://game.tscn
+res://StartButton.gd
 res://scripts/AnimationPlayer.gd
-res://CanvasLayer.gd
-res://MeshInstance2D.gd
-res://scripts/MeshInstance2D.gd
-res://shaders/screen_effects/screen_effect.gdshader
-res://Exit.gd
