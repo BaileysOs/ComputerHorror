@@ -1,13 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732621180
+::res://::1732703872
 Exit.gd::GDScript::-1::1732620952::0::1::::<>Button<>::
+game.tscn::PackedScene::3325578497285788233::1732703872::0::1::::<><>::uid://x4cqub82h4h5::::res://bilder/Unknown-2.png
 icon.svg::CompressedTexture2D::5935459331901994650::1732620952::1732620952::1::::<><>::
-main.tscn::PackedScene::4795050533608629421::1732620952::0::1::::<><>::uid://busbsvtxqcuht::::res://sounds/old-desktop-pc-booting-24280.mp3<>res://scripts/AnimationPlayer.gd<>res://Exit.gd
-::res://bilder/::1732620952
+main.tscn::PackedScene::4795050533608629421::1732703872::0::1::::<><>::uid://busbsvtxqcuht::::res://sounds/old-desktop-pc-booting-24280.mp3<>res://scripts/AnimationPlayer.gd<>res://StartButton.gd<>res://Exit.gd
+StartButton.gd::GDScript::-1::1732627041::0::1::::<>Button<>::
+::res://bilder/::1732705533
 286e88a7-2cf1-4c23-bbb9-fab4f3864ff1.png::CompressedTexture2D::6706620859378120019::1732620952::1732620952::1::::<><>::
+Folder Icon.png::CompressedTexture2D::5038276256737433725::1732705533::1732705543::1::::<><>::
+Unknown-2.jpg::CompressedTexture2D::8414208403947930383::1732703495::1732703676::1::::<><>::
+Unknown-2.png::CompressedTexture2D::1674361418778055880::1732703824::1732703846::1::::<><>::
 ::res://bin/::1732620952
-::res://scripts/::1732620952
-AnimationPlayer.gd::GDScript::-1::1732620952::0::1::::<>AnimationPlayer<>::
+::res://scripts/::1732626534
+AnimationPlayer.gd::GDScript::-1::1732626534::0::1::::<>AnimationPlayer<>::
 ::res://sounds/::1732620952
 computer-hum-78343.mp3::AudioStreamMP3::1103618390803558892::1732620952::1732620952::1::::<><>::
 old-desktop-pc-booting-24280.mp3::AudioStreamMP3::3827450350718014337::1732620952::1732620952::1::::<><>::

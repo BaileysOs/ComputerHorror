@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://bnm616r4v1q1v"]
+[gd_scene load_steps=3 format=3 uid="uid://bnm616r4v1q1v"]
+
+[ext_resource type="Texture2D" uid="uid://x4cqub82h4h5" path="res://bilder/Unknown-2.png" id="1_12ogf"]
+[ext_resource type="Texture2D" uid="uid://cd1tw575elurt" path="res://bilder/Folder Icon.png" id="2_lp460"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -7,3 +10,20 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.501961, 0.501961, 1)
+
+[node name="Unknown-2" type="Sprite2D" parent="."]
+position = Vector2(803, 305)
+texture = ExtResource("1_12ogf")
+
+[node name="FolderIcon" type="Sprite2D" parent="."]
+position = Vector2(373, 324)
+texture = ExtResource("2_lp460")
