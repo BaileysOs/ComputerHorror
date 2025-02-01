@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bnm616r4v1q1v"]
+[gd_scene load_steps=4 format=3 uid="uid://bnm616r4v1q1v"]
 
 [ext_resource type="Texture2D" uid="uid://x4cqub82h4h5" path="res://bilder/Unknown-2.png" id="1_12ogf"]
 [ext_resource type="Texture2D" uid="uid://cd1tw575elurt" path="res://bilder/Folder Icon.png" id="2_lp460"]
+[ext_resource type="PackedScene" uid="uid://dka04lvghq54v" path="res://desktop_icon.tscn" id="3_iiafg"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -25,5 +26,8 @@ position = Vector2(803, 305)
 texture = ExtResource("1_12ogf")
 
 [node name="FolderIcon" type="Sprite2D" parent="."]
-position = Vector2(373, 324)
+position = Vector2(261, 505)
 texture = ExtResource("2_lp460")
+
+[node name="Node2D" parent="." instance=ExtResource("3_iiafg")]
+position = Vector2(343, 345)
