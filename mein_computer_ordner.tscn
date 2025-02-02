@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwyho5vl73ip"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ka2s1"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.160784, 0.137255, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="MeinComputerOrdner" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(800, 600)
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ka2s1")

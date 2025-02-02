@@ -1,9 +1,11 @@
 extends Sprite2D
 var last_click_time = 0
-const DOUBLE_CLICK_TIME = 300  # Time window in milliseconds for a double-click
+var my_computer_node
+const DOUBLE_CLICK_TIME = 300
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	my_computer_node = get_parent().get_node("MyComputer")
 	pass # Replace with function body.
 
 
@@ -17,15 +19,7 @@ func _input(event):
 			var current_time = Time.get_ticks_msec()
 			if current_time - last_click_time <= DOUBLE_CLICK_TIME:
 				print("Double Click detected!")
-				#do stuff
+				my_computer_node.visible = true
 				
 			last_click_time = current_time
 	
-func load_scene_into_node(target_node: Node):
-	var new_scene = preload("res://mein_computer_ordner.tscn")
-	var scene_instance = new_scene.instance()
-	target_node.add_child(scene_instance)
-	
-func open_mein_computer_ordner():
-	var new_scene = preload("res://mein_computer_ordner.tscn")
-	$DOUBLE_CLICK_TIME

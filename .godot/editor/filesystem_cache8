@@ -1,24 +1,27 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1738409282
-desktop_icon.tscn::PackedScene::7862720810782406359::1738409282::0::1::::<><>::uid://cd1tw575elurt::::res://bilder/Folder Icon.png<>res://folder.gd
-Exit.gd::GDScript::-1::1732039645::0::1::::<>Button<>::
-export_presets.cfg::TextFile::-1::1732040245::0::1::::<><>::
-folder.gd::GDScript::-1::1738365103::0::1::::<>Sprite2D<>::
-game.tscn::PackedScene::3325578497285788233::1738365150::0::1::::<><>::uid://x4cqub82h4h5::::res://bilder/Unknown-2.png<>uid://cd1tw575elurt::::res://bilder/Folder Icon.png<>uid://dka04lvghq54v::::res://desktop_icon.tscn
-icon.svg::CompressedTexture2D::5935459331901994650::1732028017::1732028042::1::::<><>::
-main.tscn::PackedScene::4795050533608629421::1738365150::0::1::::<><>::uid://busbsvtxqcuht::::res://sounds/old-desktop-pc-booting-24280.mp3<>res://scripts/AnimationPlayer.gd<>res://StartButton.gd<>res://Exit.gd
-global.gd::GDScript::-1::1738409282::0::1::::<>Node<>::
-StartButton.gd::GDScript::-1::1738343263::0::1::::<>Button<>::
-::res://bilder/::1738343313
-286e88a7-2cf1-4c23-bbb9-fab4f3864ff1.png::CompressedTexture2D::6706620859378120019::1732036824::1732036824::1::::<><>::
-Folder Icon.png::CompressedTexture2D::5038276256737433725::1738343263::1738343313::1::::<><>::
-Unknown-2.jpg::CompressedTexture2D::8414208403947930383::1738343263::1738343313::1::::<><>::
-Unknown-2.png::CompressedTexture2D::1674361418778055880::1738343263::1738343313::1::::<><>::
-::res://bin/::1732040258
-::res://scripts/::1738343263
-AnimationPlayer.gd::GDScript::-1::1738343263::0::1::::<>AnimationPlayer<>::
-::res://shaders/::1732034176
-::res://shaders/screen_effects/::1732035478
-::res://sounds/::1732036422
-computer-hum-78343.mp3::AudioStreamMP3::1103618390803558892::1732028800::1732029558::1::::<><>::
-old-desktop-pc-booting-24280.mp3::AudioStreamMP3::3827450350718014337::1732030273::1732030286::1::::<><>::
+::res://::1738440998
+desktop_icon.tscn::PackedScene::7862720810782406359::1738440985::0::1::::<><>::uid://cd1tw575elurt::::res://bilder/Folder Icon.png<>res://folder.gd
+Exit.gd::GDScript::-1::1732620952::0::1::::<>Button<>::
+export_presets.cfg::TextFile::-1::1738440985::0::1::::<><>::
+folder.gd::GDScript::-1::1738440985::0::1::::<>Sprite2D<>::
+game.tscn::PackedScene::3325578497285788233::1738440985::0::1::::<><>::uid://x4cqub82h4h5::::res://bilder/Unknown-2.png<>uid://cd1tw575elurt::::res://bilder/Folder Icon.png<>uid://dka04lvghq54v::::res://desktop_icon.tscn
+Global.gd::GDScript::-1::1738440985::0::1::::<>Node<>::
+icon.svg::CompressedTexture2D::5935459331901994650::1732620952::1732620952::1::::<><>::
+main.tscn::PackedScene::4795050533608629421::1732705625::0::1::::<><>::uid://busbsvtxqcuht::::res://sounds/old-desktop-pc-booting-24280.mp3<>res://scripts/AnimationPlayer.gd<>res://StartButton.gd<>res://Exit.gd
+StartButton.gd::GDScript::-1::1732627041::0::1::::<>Button<>::
+::res://bilder/::1738441100
+286e88a7-2cf1-4c23-bbb9-fab4f3864ff1.png::CompressedTexture2D::6706620859378120019::1732620952::1732620952::1::::<><>::
+Folder Icon.png::CompressedTexture2D::5038276256737433725::1732705533::1732705543::1::::<><>::
+Music.png::CompressedTexture2D::5574755336125037336::1738441100::1738441100::1::::<><>::
+Ordner.png::CompressedTexture2D::4214906654653552039::1738441100::1738441100::1::::<><>::
+Pdf datei.png::CompressedTexture2D::4118242158228846782::1738441100::1738441100::1::::<><>::
+Textdatei.png::CompressedTexture2D::5904692161858291051::1738441100::1738441100::1::::<><>::
+Unknown-2.jpg::CompressedTexture2D::8414208403947930383::1732703495::1732703676::1::::<><>::
+Unknown-2.png::CompressedTexture2D::1674361418778055880::1732703824::1732703846::1::::<><>::
+Videodatei.png::CompressedTexture2D::5062091941641159374::1738441100::1738441100::1::::<><>::
+::res://bin/::1732620952
+::res://scripts/::1732626534
+AnimationPlayer.gd::GDScript::-1::1732626534::0::1::::<>AnimationPlayer<>::
+::res://sounds/::1732620952
+computer-hum-78343.mp3::AudioStreamMP3::1103618390803558892::1732620952::1732620952::1::::<><>::
+old-desktop-pc-booting-24280.mp3::AudioStreamMP3::3827450350718014337::1732620952::1732620952::1::::<><>::

@@ -1,6 +1,7 @@
-res://desktop_icon.tscn
-res://global.gd
-res://folder.gd
-res://Global.gd
-res://main.tscn
+res://mein_computer_ordner.tscn
+res://anleitung_pdf.tscn
 res://game.tscn
+res://folder.gd
+res://desktop_icon.tscn
+res://main.tscn
+res://FolderIcon.gd
