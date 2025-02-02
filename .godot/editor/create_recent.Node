@@ -1,8 +1,8 @@
-Window
 Label
-RichTextLabel
 CollisionShape2D
 Sprite2D
+Window
+RichTextLabel
 Panel
 ColorRect
 Control

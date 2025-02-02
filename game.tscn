@@ -1,12 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://bnm616r4v1q1v"]
+[gd_scene load_steps=8 format=3 uid="uid://bnm616r4v1q1v"]
 
 [ext_resource type="Texture2D" uid="uid://x4cqub82h4h5" path="res://bilder/Unknown-2.png" id="1_12ogf"]
-[ext_resource type="Texture2D" uid="uid://cd1tw575elurt" path="res://bilder/Folder Icon.png" id="2_lp460"]
+[ext_resource type="Texture2D" uid="uid://b1by5qxxsvh6f" path="res://bilder/Ordner.png" id="2_oinoa"]
 [ext_resource type="Script" path="res://FolderIcon.gd" id="3_tc6l8"]
 [ext_resource type="Script" path="res://MyComputer.gd" id="4_tei8c"]
+[ext_resource type="Texture2D" uid="uid://byw5310iw6geg" path="res://bilder/Pdf datei.png" id="5_cwbdf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w5kno"]
-size = Vector2(36, 22)
+size = Vector2(36, 35)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vokp8"]
+size = Vector2(32, 32)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -33,11 +37,11 @@ texture = ExtResource("1_12ogf")
 
 [node name="FolderIcon" type="Sprite2D" parent="."]
 position = Vector2(500, 200)
-texture = ExtResource("2_lp460")
+texture = ExtResource("2_oinoa")
 script = ExtResource("3_tc6l8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FolderIcon"]
-position = Vector2(0, 7)
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_w5kno")
 
 [node name="Label" type="Label" parent="FolderIcon"]
@@ -55,5 +59,21 @@ text = "My Computer"
 [node name="MyComputer" type="Window" parent="."]
 mode = 3
 initial_position = 1
+size = Vector2i(400, 200)
 visible = false
 script = ExtResource("4_tei8c")
+
+[node name="Sprite2D" type="Sprite2D" parent="MyComputer"]
+position = Vector2(70, 30)
+texture = ExtResource("5_cwbdf")
+offset = Vector2(2.08165e-12, 2.08165e-12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MyComputer/Sprite2D"]
+shape = SubResource("RectangleShape2D_vokp8")
+
+[node name="Label" type="Label" parent="MyComputer/Sprite2D/CollisionShape2D"]
+offset_left = -52.0
+offset_top = 16.0
+offset_right = 53.0
+offset_bottom = 39.0
+text = "Tagebuch.pdf"
