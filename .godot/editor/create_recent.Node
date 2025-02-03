@@ -1,7 +1,8 @@
 Label
+Window
+TextEdit
 CollisionShape2D
 Sprite2D
-Window
 RichTextLabel
 Panel
 ColorRect
@@ -11,4 +12,3 @@ TextureButton
 MeshInstance2D
 CanvasLayer
 AnimationPlayer
-AudioStreamPlayer

@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://bnm616r4v1q1v"]
+[gd_scene load_steps=10 format=3 uid="uid://bnm616r4v1q1v"]
 
 [ext_resource type="Texture2D" uid="uid://x4cqub82h4h5" path="res://bilder/Unknown-2.png" id="1_12ogf"]
 [ext_resource type="Texture2D" uid="uid://b1by5qxxsvh6f" path="res://bilder/Ordner.png" id="2_oinoa"]
 [ext_resource type="Script" path="res://FolderIcon.gd" id="3_tc6l8"]
 [ext_resource type="Script" path="res://MyComputer.gd" id="4_tei8c"]
 [ext_resource type="Texture2D" uid="uid://byw5310iw6geg" path="res://bilder/Pdf datei.png" id="5_cwbdf"]
+[ext_resource type="Script" path="res://Tagebuch.gd" id="6_5832l"]
+[ext_resource type="Script" path="res://DiaryWindow.gd" id="7_fh3j1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w5kno"]
 size = Vector2(36, 35)
@@ -58,22 +60,38 @@ text = "My Computer"
 
 [node name="MyComputer" type="Window" parent="."]
 mode = 3
+title = "My Computer"
 initial_position = 1
 size = Vector2i(400, 200)
 visible = false
 script = ExtResource("4_tei8c")
 
-[node name="Sprite2D" type="Sprite2D" parent="MyComputer"]
+[node name="Diary" type="Sprite2D" parent="MyComputer"]
 position = Vector2(70, 30)
 texture = ExtResource("5_cwbdf")
 offset = Vector2(2.08165e-12, 2.08165e-12)
+script = ExtResource("6_5832l")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MyComputer/Sprite2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MyComputer/Diary"]
 shape = SubResource("RectangleShape2D_vokp8")
 
-[node name="Label" type="Label" parent="MyComputer/Sprite2D/CollisionShape2D"]
-offset_left = -52.0
+[node name="Label" type="Label" parent="MyComputer/Diary/CollisionShape2D"]
+offset_left = -35.0
 offset_top = 16.0
-offset_right = 53.0
+offset_right = 70.0
 offset_bottom = 39.0
-text = "Tagebuch.pdf"
+text = "Diary.pdf"
+
+[node name="DiaryWindow" type="Window" parent="MyComputer/Diary"]
+title = "Diary.pdf"
+initial_position = 1
+size = Vector2i(400, 200)
+visible = false
+script = ExtResource("7_fh3j1")
+
+[node name="Label" type="Label" parent="MyComputer/Diary/DiaryWindow"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "1.1.2025
+Today is disvoered something crazy.......
+this time the code is 4567"
