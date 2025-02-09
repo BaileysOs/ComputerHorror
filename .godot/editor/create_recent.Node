@@ -1,8 +1,9 @@
-TextEdit
+Label
+VideoStreamPlayer
 Window
 CollisionShape2D
-Label
 Sprite2D
+TextEdit
 RichTextLabel
 Panel
 ColorRect
@@ -11,4 +12,3 @@ Button
 TextureButton
 MeshInstance2D
 CanvasLayer
-AnimationPlayer

@@ -2,5 +2,5 @@ res://game.tscn
 res://main.tscn
 res://desktop_icon.tscn
 res://mein_computer_ordner.tscn
-res://Notes.gd
-res://NotesWindow.gd
+res://FolderIcon.gd
+res://Video.gd

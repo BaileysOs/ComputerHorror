@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bnm616r4v1q1v"]
+[gd_scene load_steps=17 format=3 uid="uid://bnm616r4v1q1v"]
 
 [ext_resource type="Texture2D" uid="uid://x4cqub82h4h5" path="res://bilder/Unknown-2.png" id="1_12ogf"]
 [ext_resource type="Texture2D" uid="uid://b1by5qxxsvh6f" path="res://bilder/Ordner.png" id="2_oinoa"]
@@ -10,6 +10,8 @@
 [ext_resource type="Script" path="res://Notes.gd" id="6_smorj"]
 [ext_resource type="Script" path="res://NotesWindow.gd" id="7_3q51f"]
 [ext_resource type="Script" path="res://DiaryWindow.gd" id="7_fh3j1"]
+[ext_resource type="Texture2D" uid="uid://ceed6dnj12eg1" path="res://bilder/Videodatei.png" id="11_6pq3o"]
+[ext_resource type="Script" path="res://Video.gd" id="12_ecvxe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w5kno"]
 size = Vector2(36, 35)
@@ -18,6 +20,9 @@ size = Vector2(36, 35)
 size = Vector2(32, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vokp8"]
+size = Vector2(32, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_icf3w"]
 size = Vector2(32, 32)
 
 [node name="Control" type="Control"]
@@ -64,7 +69,7 @@ offset_right = 37.0
 offset_bottom = 16.056
 text = "My Computer"
 
-[node name="MyComputer" type="Window" parent="."]
+[node name="MyComputer" type="Window" parent="FolderIcon"]
 mode = 3
 title = "My Computer"
 initial_position = 1
@@ -72,58 +77,85 @@ size = Vector2i(400, 200)
 visible = false
 script = ExtResource("4_tei8c")
 
-[node name="Text" type="Sprite2D" parent="MyComputer"]
+[node name="Text" type="Sprite2D" parent="FolderIcon/MyComputer"]
 position = Vector2(150, 30)
 texture = ExtResource("5_f0plj")
 script = ExtResource("6_smorj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MyComputer/Text"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FolderIcon/MyComputer/Text"]
 shape = SubResource("RectangleShape2D_aqe5k")
 
-[node name="Label" type="Label" parent="MyComputer/Text/CollisionShape2D"]
+[node name="Label" type="Label" parent="FolderIcon/MyComputer/Text/CollisionShape2D"]
 offset_left = -27.0
 offset_top = 16.0
 offset_right = 33.0
 offset_bottom = 39.0
 text = "Text.txt"
 
-[node name="Notes" type="Window" parent="MyComputer/Text"]
+[node name="Notes" type="Window" parent="FolderIcon/MyComputer/Text"]
 title = "Notes"
 initial_position = 2
 size = Vector2i(600, 400)
 visible = false
 script = ExtResource("7_3q51f")
 
-[node name="TextEdit" type="TextEdit" parent="MyComputer/Text/Notes"]
-offset_right = 8.0
-offset_bottom = 8.0
+[node name="TextEdit" type="TextEdit" parent="FolderIcon/MyComputer/Text/Notes"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Diary" type="Sprite2D" parent="MyComputer"]
+[node name="Diary" type="Sprite2D" parent="FolderIcon/MyComputer"]
 position = Vector2(70, 30)
 texture = ExtResource("5_cwbdf")
 offset = Vector2(2.08165e-12, 2.08165e-12)
 script = ExtResource("6_5832l")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MyComputer/Diary"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FolderIcon/MyComputer/Diary"]
 shape = SubResource("RectangleShape2D_vokp8")
 
-[node name="Label" type="Label" parent="MyComputer/Diary/CollisionShape2D"]
+[node name="Label" type="Label" parent="FolderIcon/MyComputer/Diary/CollisionShape2D"]
 offset_left = -35.0
 offset_top = 16.0
 offset_right = 70.0
 offset_bottom = 39.0
 text = "Diary.pdf"
 
-[node name="DiaryWindow" type="Window" parent="MyComputer/Diary"]
+[node name="DiaryWindow" type="Window" parent="FolderIcon/MyComputer/Diary"]
 title = "Diary.pdf"
 initial_position = 1
 size = Vector2i(400, 200)
 visible = false
 script = ExtResource("7_fh3j1")
 
-[node name="Label" type="Label" parent="MyComputer/Diary/DiaryWindow"]
+[node name="Label" type="Label" parent="FolderIcon/MyComputer/Diary/DiaryWindow"]
 offset_right = 40.0
 offset_bottom = 23.0
 text = "1.1.2025
 Today is disvoered something crazy.......
 this time the code is 4567"
+
+[node name="Video" type="Sprite2D" parent="FolderIcon/MyComputer"]
+position = Vector2(230, 30)
+texture = ExtResource("11_6pq3o")
+script = ExtResource("12_ecvxe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FolderIcon/MyComputer/Video"]
+shape = SubResource("RectangleShape2D_icf3w")
+
+[node name="Label" type="Label" parent="FolderIcon/MyComputer/Video/CollisionShape2D"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Video.mp4"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="VideoWindow" type="Window" parent="FolderIcon/MyComputer/Video"]
+mode = 3
+initial_position = 2
+size = Vector2i(400, 200)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="FolderIcon/MyComputer/Video/VideoWindow"]
+offset_right = 40.0
+offset_bottom = 40.0

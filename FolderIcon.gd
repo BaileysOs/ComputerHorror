@@ -11,7 +11,7 @@ var my_computer_node
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	my_computer_node = get_parent().get_node("MyComputer")
+	my_computer_node = get_node("MyComputer")
 	set_process_input(true)# Replace with function body.
 
 
