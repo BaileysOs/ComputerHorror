@@ -1,15 +1,21 @@
-[gd_scene load_steps=10 format=3 uid="uid://bnm616r4v1q1v"]
+[gd_scene load_steps=14 format=3 uid="uid://bnm616r4v1q1v"]
 
 [ext_resource type="Texture2D" uid="uid://x4cqub82h4h5" path="res://bilder/Unknown-2.png" id="1_12ogf"]
 [ext_resource type="Texture2D" uid="uid://b1by5qxxsvh6f" path="res://bilder/Ordner.png" id="2_oinoa"]
 [ext_resource type="Script" path="res://FolderIcon.gd" id="3_tc6l8"]
 [ext_resource type="Script" path="res://MyComputer.gd" id="4_tei8c"]
 [ext_resource type="Texture2D" uid="uid://byw5310iw6geg" path="res://bilder/Pdf datei.png" id="5_cwbdf"]
+[ext_resource type="Texture2D" uid="uid://cqejogknogm5p" path="res://bilder/Textdatei.png" id="5_f0plj"]
 [ext_resource type="Script" path="res://Tagebuch.gd" id="6_5832l"]
+[ext_resource type="Script" path="res://Notes.gd" id="6_smorj"]
+[ext_resource type="Script" path="res://NotesWindow.gd" id="7_3q51f"]
 [ext_resource type="Script" path="res://DiaryWindow.gd" id="7_fh3j1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w5kno"]
 size = Vector2(36, 35)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aqe5k"]
+size = Vector2(32, 32)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vokp8"]
 size = Vector2(32, 32)
@@ -65,6 +71,32 @@ initial_position = 1
 size = Vector2i(400, 200)
 visible = false
 script = ExtResource("4_tei8c")
+
+[node name="Text" type="Sprite2D" parent="MyComputer"]
+position = Vector2(150, 30)
+texture = ExtResource("5_f0plj")
+script = ExtResource("6_smorj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MyComputer/Text"]
+shape = SubResource("RectangleShape2D_aqe5k")
+
+[node name="Label" type="Label" parent="MyComputer/Text/CollisionShape2D"]
+offset_left = -27.0
+offset_top = 16.0
+offset_right = 33.0
+offset_bottom = 39.0
+text = "Text.txt"
+
+[node name="Notes" type="Window" parent="MyComputer/Text"]
+title = "Notes"
+initial_position = 2
+size = Vector2i(600, 400)
+visible = false
+script = ExtResource("7_3q51f")
+
+[node name="TextEdit" type="TextEdit" parent="MyComputer/Text/Notes"]
+offset_right = 8.0
+offset_bottom = 8.0
 
 [node name="Diary" type="Sprite2D" parent="MyComputer"]
 position = Vector2(70, 30)

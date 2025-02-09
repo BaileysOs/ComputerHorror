@@ -1,7 +1,7 @@
-Label
-Window
 TextEdit
+Window
 CollisionShape2D
+Label
 Sprite2D
 RichTextLabel
 Panel

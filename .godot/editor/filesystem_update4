@@ -1,10 +1,6 @@
-res://mein_computer_ordner.tscn
-res://anleitung_pdf.tscn
 res://game.tscn
-res://folder.gd
-res://desktop_icon.tscn
 res://main.tscn
-res://FolderIcon.gd
-res://MyComputer.gd
-res://Tagebuch.gd
-res://DiaryWindow.gd
+res://desktop_icon.tscn
+res://mein_computer_ordner.tscn
+res://Notes.gd
+res://NotesWindow.gd
